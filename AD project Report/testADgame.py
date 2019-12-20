@@ -45,3 +45,7 @@ class TestADgame(unittest.TestCase):
         self.assertEqual(self.boss.rect.height(), 100)
         self.assertEqual(self.boss.life, 200)
         self.assertFalse(self.boss.Bossposition)
+        
+ ## 저희는 대부분의 코드 구현을 PlayGame 클래스 에서 구현을 해서 PlayGame 객체를 만들어야 하는데 객체를 만드는 부분에
+## thread 함수를 실행시키는 부분이 들어가 있어서 객체생성이 실행되면 thread가 같이 돌아가서 단위테스트 진행이 되지 않습니다...
+## 죄송합니다.
